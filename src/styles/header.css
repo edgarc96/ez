@@ -91,3 +91,41 @@
 .header .language-switcher button:hover {
   background-color: #007bff; /* Azul claro para el hover */
 }
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    margin-bottom: 10px; /* Agregar un margen inferior para separar el logo del menú */
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .quote-button {
+    margin-top: 10px; /* Espacio adicional para el botón */
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px; /* Reduce el padding en dispositivos móviles */
+  }
+
+  .language-options {
+    margin-top: 10px;
+  }
+
+  .language-options span {
+    padding: 5px 15px;
+    margin: 5px 0; /* Espaciado entre los botones de idioma */
+  }
+}
