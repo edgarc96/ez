@@ -1,9 +1,10 @@
 import React from "react";
+import "../styles/footer.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <p>© 2024 EZ LIVING - Todos los derechos reservados</p>
+    <footer class="footer">
+      <p>&copy; 2024 EZ LIVING - Todos los derechos reservados</p>
       <p>Edgar Cabrera</p>
     </footer>
   );

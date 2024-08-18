@@ -1,15 +1,41 @@
-/* src/styles/home.css */
+/* Eliminar márgenes y paddings globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegurar que html y body ocupen toda la pantalla */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Evitar el scroll */
+}
+
+/* Estilos generales para la página de inicio */
 .home {
-  background-image: url("../components/images/foto_de_fondo_smarthome.jpg"); /* Reemplaza con la ruta correcta */
+  background-image: url("../components/images/foto_de_fondo_smarthome.jpg"); /* Ruta correcta a tu imagen */
   background-size: cover;
-  background-position: center;
+  background-position: center center; /* Centrado general para pantallas grandes */
   background-repeat: no-repeat;
   height: 100vh;
   display: flex;
-  justify-content: flex-end; /* Cambia a flex-start para alinear a la izquierda */
-  align-items: flex-start; /* Cambia a flex-end para alinear hacia abajo */
+  justify-content: end; /* Centra horizontalmente el contenido */
+  align-items: flex-start; /* Centra verticalmente el contenido */
   color: white;
-  padding: 20px; /* Puedes ajustar el padding para mayor control */
+  padding: 20px;
+  margin: 0;
+}
+
+/* Ajustes adicionales para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .home {
+    background-position: center 30%; /* Ajuste fino para centrar verticalmente en móviles */
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Elimina el padding adicional en dispositivos móviles */
+  }
 }
 
 .home-content {

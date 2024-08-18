@@ -1,0 +1,20 @@
+.footer {
+  background-color: #001f3f; /* Color de fondo oscuro similar al header */
+  color: white; /* Texto en blanco */
+  text-align: center; /* Centrar el texto */
+  padding: 10px 15px; /* Usar los mismos valores de padding que el header */
+  position: fixed; /* Mantener el footer fijo en la parte inferior */
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  font-size: 0.8rem; /* Tamaño de fuente ajustado */
+  line-height: 1.4; /* Ajuste del interlineado */
+}
+
+/* Ajustes para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .footer {
+    font-size: 0.7rem; /* Tamaño de fuente ajustado en móviles */
+    padding: 8px 15px; /* Padding reducido en móviles */
+  }
+}
