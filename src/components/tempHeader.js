@@ -12,9 +12,6 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        {/* Barra superior con íconos de redes sociales y contacto */}
-
-        {/* Sección principal del header con logo, navegación y botón */}
         <div className="main-header">
           <div className="logo">
             <img src="logo.png" alt="Logo" />
@@ -52,32 +49,11 @@ const Header = () => {
         </div>
       </header>
 
-      {/* Menú deslizante para pantallas pequeñas */}
-      <nav className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
-        <ul>
-          <li>
-            <a href="#nosotros">Nosotros</a>
-          </li>
-          <li>
-            <a href="#servicios">Servicios</a>
-          </li>
-          <li>
-            <a href="#proyectos">Proyectos</a>
-          </li>
-          <li>
-            <a href="#contacto">Contacto</a>
-          </li>
-          <li>
-            <button>Cotizar</button>
-          </li>
-        </ul>
-      </nav>
-
-      {/* Overlay para cerrar el menú en pantallas pequeñas */}
-      <div
-        className={`overlay ${isMobileMenuOpen ? "show" : ""}`}
-        onClick={toggleMobileMenu}
-      ></div>
+      <main className="main-content">
+        <div style={{ backgroundColor: "red", height: "100px", width: "100%" }}>
+          Esto es una prueba para ver si el contenido se renderiza
+        </div>
+      </main>
     </>
   );
 };
