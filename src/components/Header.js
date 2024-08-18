@@ -1,33 +1,32 @@
+// src/components/Header.js
 import React from "react";
-import "../styles/header.css"; // Asegúrate de tener este archivo en la carpeta styles
+import "../styles/header.css";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src="/path/to/logo.png" alt="EZ LIVING Logo" />
+        <img src="logo.png" alt="Logo" />
+        <div className="company-info">
+          <h1>SmartLab</h1>
+          <p>Mexico City | Los Cabos | Miami</p>
+        </div>
       </div>
-      <nav className="nav-links">
+      <nav className="navbar">
         <ul>
-          <li>
-            <a href="#about">Nosotros</a>
-          </li>
-          <li>
-            <a href="#services">Servicios</a>
-          </li>
-          <li>
-            <a href="#projects">Proyectos</a>
-          </li>
-          <li>
-            <a href="#contact">Contacto</a>
-          </li>
-          <li>
-            <a href="#quote" className="quote-button">
-              Cotizar
-            </a>
-          </li>
+          <li>Nosotros</li>
+          <li>Servicios</li>
+          <li>Proyectos</li>
+          <li>Contacto</li>
         </ul>
       </nav>
+      <div className="cta">
+        <button>Cotizar</button>
+        <div className="language-switcher">
+          <button>Español</button>
+          <button>English</button>
+        </div>
+      </div>
     </header>
   );
 };

@@ -1,32 +1,93 @@
+/* src/styles/header.css */
 .header {
+  background-color: #001f3f; /* Color oscuro similar al de la imagen */
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background-color: #4caf50;
   color: white;
 }
 
-.logo h1 {
-  margin: 0;
+.header .logo {
+  display: flex;
+  align-items: center;
 }
 
-.nav-links {
-  list-style: none;
+.header .logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.header .company-info h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.header .company-info p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.header .navbar {
   display: flex;
   gap: 20px;
 }
 
-.nav-links li {
+.header .navbar ul {
+  display: flex;
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
-  color: white;
+.header .navbar li {
+  margin: 0 15px;
+  font-size: 1rem;
+}
+
+.header .navbar a {
   text-decoration: none;
-  font-size: 16px;
+  color: white;
+  transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
+.header .navbar a:hover {
+  color: #007bff; /* Color azul claro para el hover */
+}
+
+.header .cta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .cta button {
+  background-color: #ff851b; /* Naranja para el botón de cotizar */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header .cta button:hover {
+  background-color: #ff6700; /* Color naranja más oscuro al pasar el mouse */
+}
+
+.header .language-switcher {
+  display: flex;
+  gap: 5px;
+}
+
+.header .language-switcher button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header .language-switcher button:hover {
+  background-color: #007bff; /* Azul claro para el hover */
 }
