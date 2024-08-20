@@ -1,9 +1,11 @@
+/* Ajustes generales */
 body,
 html {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
 .home {
@@ -11,62 +13,58 @@ html {
   overflow-x: hidden;
 }
 
+/* Sección 1: Portada */
 .section-1 {
-  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  height: 100vh;
   background: url("../components/images/smarthome-1.png") no-repeat center
-    center/cover; /* Imagen de fondo */
-  color: white; /* Texto en blanco */
+    center/cover;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* Alinea el contenido hacia la izquierda */
-  text-align: left; /* Alinea el texto a la izquierda */
+  align-items: flex-start;
+  text-align: left;
   position: relative;
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 85%,
-    50% 100%,
-    0 85%
-  ); /* Partidura triangular hacia abajo en el centro */
-  padding-left: 10%; /* Agrega un padding para el texto desde la izquierda */
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  padding-left: 10%;
 }
 
 .section-1 h1 {
   position: relative;
-  top: -50px; /* Ajusta este valor para mover el h1 hacia arriba */
-  color: white; /* Color del texto */
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Sombra del texto */
-  font-size: 2.5rem; /* Aumenta el tamaño del texto */
+  top: -50px;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+  font-size: 2.5rem;
 }
 
 .section-1 p {
   position: relative;
-  top: -70px; /* Ajusta este valor para mover el párrafo hacia arriba */
-  color: white; /* Color del texto */
-  font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+  top: -70px;
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
+/* Sección 2: Características */
 .section-2 {
   padding: 50px;
-  background-color: white; /* Fondo blanco */
-  color: black; /* Texto en negro */
+  background-color: white;
+  color: black;
   text-align: center;
 }
 
 .features-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px; /* Espacio entre las tarjetas */
+  grid-gap: 20px;
   padding: 20px;
 }
 
 .feature {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Asegura que todo comience desde el inicio de la tarjeta */
-  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
   padding: 20px;
   background-color: #fff;
@@ -75,17 +73,10 @@ html {
 }
 
 .feature img {
-  width: 100%; /* O un tamaño fijo que funcione para todas las imágenes */
-  height: auto; /* Mantén la proporción */
-  display: block; /* Asegura que no haya espacio adicional debajo de la imagen */
-  margin-bottom: 15px; /* Espacio uniforme debajo de la imagen */
-}
-
-.feature-text {
-  .feature-text {
-    flex: 1; /* Hace que el texto ocupe el espacio disponible */
-    padding: 10px 0;
-  }
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .feature h3 {
@@ -98,76 +89,76 @@ html {
   font-size: 1em;
   font-weight: 400;
   color: #555555;
-  line-height: 1.5; /* Mejora la legibilidad */
+  line-height: 1.5;
 }
 
-/* images feature 3 */
-
+/* Sección 3: Servicios */
 .service-icon {
-  width: 200px; /* Ajusta el tamaño según sea necesario */
-  height: auto; /* Mantiene la proporción de la imagen */
-  margin: 10px; /* Espacio entre los íconos */
+  width: 200px;
+  height: auto;
+  margin: 10px;
 }
 
 img.service-icon[alt="Temperatura"] {
-  /* Estilos aquí */
   margin-bottom: -10px;
 }
 
 .services-section.section-3 > h2 {
   padding-left: 50px;
-  color: #1a1a2e; /* Azul oscuro */
-  font-size: 2em; /* Ajustar según el diseño */
+  color: #1a1a2e;
+  font-size: 2em;
   font-weight: bold;
-  border-bottom: 2px solid #1a1a2e; /* Subrayado sutil */
+  border-bottom: 2px solid #1a1a2e;
   padding-bottom: 10px;
 }
 
 .services-section.section-3 > img {
   padding-left: 50px;
-  color: #1a1a2e; /* Azul oscuro */
-  font-size: 2em; /* Ajustar según el diseño */
+  color: #1a1a2e;
+  font-size: 2em;
   font-weight: bold;
-  border-bottom: 2px solid #1a1a2e; /* Subrayado sutil */
+  border-bottom: 2px solid #1a1a2e;
   padding-bottom: 10px;
 }
 
+/* Sección Brands */
 .Brands img {
   padding: 30px;
 }
 
 .Brands p {
-  font-family: "Roboto", sans-serif; /* Cambia la fuente a una más moderna */
-  font-size: 24px; /* Ajusta el tamaño de la fuente */
-  font-weight: 600; /* Usa un peso de fuente más grueso */
-  color: #333; /* Cambia el color a un gris oscuro */
-  text-align: center; /* Centra el texto */
-  margin-bottom: 20px; /* Añade espacio debajo del texto */
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+/* Botón de WhatsApp */
 .whatsapp-button {
-  position: fixed; /* Fija la posición en la pantalla */
-  bottom: 20px; /* Espacio desde el fondo de la pantalla */
-  right: 20px; /* Espacio desde el lado derecho de la pantalla */
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .whatsapp-button img {
-  width: 60px; /* Ajusta el tamaño del ícono */
+  width: 60px;
   height: 60px;
-  border-radius: 50%; /* Hace que el ícono sea circular */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Añade una sombra suave */
-  transition: transform 0.3s ease-in-out; /* Efecto suave al pasar el mouse */
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
 }
 
 .whatsapp-button img:hover {
-  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+  transform: scale(1.1);
 }
 
 /* Responsividad */
 @media only screen and (max-width: 768px) {
   .section-1 {
-    align-items: center; /* Centra el contenido en pantallas más pequeñas */
+    align-items: center;
     text-align: center;
     padding-left: 0;
   }
@@ -187,8 +178,8 @@ img.service-icon[alt="Temperatura"] {
   }
 
   .features-container {
-    flex-direction: column;
-    gap: 20px;
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    grid-gap: 20px;
   }
 
   .feature {
