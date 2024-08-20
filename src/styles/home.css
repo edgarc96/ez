@@ -56,31 +56,36 @@ html {
 }
 
 .features-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px; /* Espacio entre las tarjetas */
   padding: 20px;
 }
 
 .feature {
   display: flex;
-  align-items: center;
-  background-color: white;
+  flex-direction: column;
+  justify-content: flex-start; /* Asegura que todo comience desde el inicio de la tarjeta */
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center;
   padding: 20px;
+  background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 48%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .feature img {
-  width: 45%; /* El GIF ocupa el 40% del ancho de la tarjeta */
-  height: auto;
-  border-radius: 8px;
+  width: 100%; /* O un tamaño fijo que funcione para todas las imágenes */
+  height: auto; /* Mantén la proporción */
+  display: block; /* Asegura que no haya espacio adicional debajo de la imagen */
+  margin-bottom: 15px; /* Espacio uniforme debajo de la imagen */
 }
 
 .feature-text {
-  width: 60%; /* El texto ocupa el 60% del ancho de la tarjeta */
-  padding-left: 20px; /* Espacio entre el GIF y el texto */
+  .feature-text {
+    flex: 1; /* Hace que el texto ocupe el espacio disponible */
+    padding: 10px 0;
+  }
 }
 
 .feature h3 {

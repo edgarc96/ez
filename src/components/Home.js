@@ -69,6 +69,23 @@ const Home = () => {
                 </p>
               </div>
             </div>
+            <div className="feature">
+              <img
+                src={require("../components/images/refri.jpg")}
+                alt="Aire"
+                className="feature-image"
+              />
+              <div className="feature-text">
+                <h3>Aire Acondicionado</h3>
+                <p>
+                  Controla la temperatura de tu hogar con facilidad. Ajusta el
+                  aire acondicionado desde cualquier lugar utilizando tu tableta
+                  de control inteligente. Mantén tu hogar fresco y cómodo con un
+                  simple toque, optimizando el clima en cada habitación según
+                  tus necesidades
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
