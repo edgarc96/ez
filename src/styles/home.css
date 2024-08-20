@@ -1,52 +1,220 @@
-/* Eliminar márgenes y paddings globales */
-* {
+body,
+html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* Asegurar que html y body ocupen toda la pantalla */
-html,
-body {
-  width: 100%;
   height: 100%;
-  overflow: hidden; /* Evitar el scroll */
+  font-family: Arial, sans-serif;
 }
 
-/* Estilos generales para la página de inicio */
 .home {
-  background-image: url("../components/images/foto_de_fondo_smarthome.jpg"); /* Ruta correcta a tu imagen */
-  background-size: cover;
-  background-position: center center; /* Centrado general para pantallas grandes */
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  justify-content: end; /* Centra horizontalmente el contenido */
-  align-items: flex-start; /* Centra verticalmente el contenido */
-  color: white;
-  padding: 20px;
-  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/* Ajustes adicionales para dispositivos móviles */
+.section-1 {
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  background: url("../components/images/smarthome-1.png") no-repeat center
+    center/cover; /* Imagen de fondo */
+  color: white; /* Texto en blanco */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Alinea el contenido hacia la izquierda */
+  text-align: left; /* Alinea el texto a la izquierda */
+  position: relative;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 85%,
+    50% 100%,
+    0 85%
+  ); /* Partidura triangular hacia abajo en el centro */
+  padding-left: 10%; /* Agrega un padding para el texto desde la izquierda */
+}
+
+.section-1 h1 {
+  position: relative;
+  top: -50px; /* Ajusta este valor para mover el h1 hacia arriba */
+  color: white; /* Color del texto */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+  font-size: 2.5rem; /* Aumenta el tamaño del texto */
+}
+
+.section-1 p {
+  position: relative;
+  top: -70px; /* Ajusta este valor para mover el párrafo hacia arriba */
+  color: white; /* Color del texto */
+  font-size: 1.2rem; /* Aumenta el tamaño de la fuente */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+}
+
+.section-2 {
+  padding: 50px;
+  background-color: white; /* Fondo blanco */
+  color: black; /* Texto en negro */
+  text-align: center;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 48%;
+}
+
+.feature img {
+  width: 45%; /* El GIF ocupa el 40% del ancho de la tarjeta */
+  height: auto;
+  border-radius: 8px;
+}
+
+.feature-text {
+  width: 60%; /* El texto ocupa el 60% del ancho de la tarjeta */
+  padding-left: 20px; /* Espacio entre el GIF y el texto */
+}
+
+.feature h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.feature-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #555555;
+  line-height: 1.5; /* Mejora la legibilidad */
+}
+
+/* images feature 3 */
+
+.service-icon {
+  width: 200px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin: 10px; /* Espacio entre los íconos */
+}
+
+img.service-icon[alt="Temperatura"] {
+  /* Estilos aquí */
+  margin-bottom: -10px;
+}
+
+.services-section.section-3 > h2 {
+  padding-left: 50px;
+  color: #1a1a2e; /* Azul oscuro */
+  font-size: 2em; /* Ajustar según el diseño */
+  font-weight: bold;
+  border-bottom: 2px solid #1a1a2e; /* Subrayado sutil */
+  padding-bottom: 10px;
+}
+
+.services-section.section-3 > img {
+  padding-left: 50px;
+  color: #1a1a2e; /* Azul oscuro */
+  font-size: 2em; /* Ajustar según el diseño */
+  font-weight: bold;
+  border-bottom: 2px solid #1a1a2e; /* Subrayado sutil */
+  padding-bottom: 10px;
+}
+
+.Brands img {
+  padding: 30px;
+}
+
+.Brands p {
+  font-family: "Roboto", sans-serif; /* Cambia la fuente a una más moderna */
+  font-size: 24px; /* Ajusta el tamaño de la fuente */
+  font-weight: 600; /* Usa un peso de fuente más grueso */
+  color: #333; /* Cambia el color a un gris oscuro */
+  text-align: center; /* Centra el texto */
+  margin-bottom: 20px; /* Añade espacio debajo del texto */
+}
+
+.whatsapp-button {
+  position: fixed; /* Fija la posición en la pantalla */
+  bottom: 20px; /* Espacio desde el fondo de la pantalla */
+  right: 20px; /* Espacio desde el lado derecho de la pantalla */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.whatsapp-button img {
+  width: 60px; /* Ajusta el tamaño del ícono */
+  height: 60px;
+  border-radius: 50%; /* Hace que el ícono sea circular */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Añade una sombra suave */
+  transition: transform 0.3s ease-in-out; /* Efecto suave al pasar el mouse */
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+/* Responsividad */
 @media only screen and (max-width: 768px) {
-  .home {
-    background-position: center 30%; /* Ajuste fino para centrar verticalmente en móviles */
-    justify-content: center;
-    align-items: center;
-    padding: 0; /* Elimina el padding adicional en dispositivos móviles */
+  .section-1 {
+    align-items: center; /* Centra el contenido en pantallas más pequeñas */
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .section-1 h1,
+  .section-1 p {
+    top: 0;
+    transform: translateY(-20%);
+  }
+
+  .section-1 h1 {
+    font-size: 2rem;
+  }
+
+  .section-1 p {
+    font-size: 1rem;
+  }
+
+  .features-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .feature {
+    width: 100%;
   }
 }
 
-.home-content {
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Overlay oscuro para mejorar la legibilidad del texto */
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 500px; /* Limita el ancho del contenido para que no ocupe toda la pantalla */
-  margin-bottom: 50px; /* Ajusta la distancia del borde inferior */
+.text-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: roll 6s infinite;
+}
+
+@keyframes roll {
+  0% {
+    width: 0;
+  }
+  30%,
+  80% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* Sección adicional */
+.additional-content {
+  padding: 50px;
+  background-color: #f0f0f0;
+  color: black;
+  text-align: center;
 }

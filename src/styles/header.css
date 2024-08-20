@@ -8,6 +8,11 @@
   width: 100%;
 }
 
+/* Asegurar que el contenido principal no quede oculto debajo del header */
+.main-content {
+  padding-top: 60px; /* Ajusta según la altura del header */
+}
+
 /* Estilos para la sección principal del header */
 .main-header {
   display: flex;

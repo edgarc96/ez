@@ -3,8 +3,7 @@
   color: white; /* Texto en blanco */
   text-align: center; /* Centrar el texto */
   padding: 10px 15px; /* Usar los mismos valores de padding que el header */
-  position: fixed; /* Mantener el footer fijo en la parte inferior */
-  bottom: 0;
+  position: relative; /* Hacer que el footer se posicione al final del contenido */
   width: 100%;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
   font-size: 0.8rem; /* Tamaño de fuente ajustado */
