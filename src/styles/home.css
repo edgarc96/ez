@@ -8,6 +8,13 @@ html {
   overflow-x: hidden; /* Evita el scroll horizontal */
 }
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .home {
   width: 100%;
   overflow-x: hidden;
@@ -195,6 +202,24 @@ img.service-icon[alt="Temperatura"] {
 }
 
 @keyframes roll {
+  0% {
+    width: 0;
+  }
+  30%,
+  80% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.text-animation {
+  animation: roll-mobile 8s infinite;
+  letter-spacing: 0.1em; /* Incrementa el espaciado entre letras */
+}
+
+@keyframes roll-mobile {
   0% {
     width: 0;
   }
