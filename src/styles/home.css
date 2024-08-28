@@ -198,28 +198,11 @@ img.service-icon[alt="Temperatura"] {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  animation: roll 6s infinite;
+  animation: roll 6s infinite linear;
+  width: 100%;
 }
 
 @keyframes roll {
-  0% {
-    width: 0;
-  }
-  30%,
-  80% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  }
-}
-
-.text-animation {
-  animation: roll-mobile 8s infinite;
-  letter-spacing: 0.1em; /* Incrementa el espaciado entre letras */
-}
-
-@keyframes roll-mobile {
   0% {
     width: 0;
   }
