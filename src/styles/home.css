@@ -196,9 +196,10 @@ img.service-icon[alt="Temperatura"] {
 
 .text-animation {
   display: inline-block;
+  font-size: 1rem;
   overflow: hidden;
   white-space: nowrap;
-  animation: roll 6s infinite linear;
+  animation: roll 5s infinite linear;
   width: 100%;
 }
 
