@@ -9,6 +9,7 @@ const Home = () => {
       <div className="home">
         <div className="home-content section-1">
           <h1>Bienvenido a EZ LIVING</h1>
+
           <p className="text-animation">
             <h4>Automatización e integración de dispositivos IoT. </h4>
             <ul>
@@ -23,7 +24,14 @@ const Home = () => {
             </ul>
           </p>
         </div>
-
+        <div className="module-ha">
+          <img
+            src={require("../components/images/centro_control_ha.jpg")}
+            alt="Modulo"
+            className="modulo-icon"
+            loading="lazy"
+          />
+        </div>
         <div className="divider"></div>
       </div>
 

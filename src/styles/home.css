@@ -14,6 +14,23 @@ html {
   overflow-x: hidden;
 }
 
+.module-ha {
+  position: relative; /* Establece el contenedor como relativo */
+}
+
+.modulo-icon {
+  position: absolute; /* Posiciona la imagen de forma absoluta */
+  top: -550px; /* Ubica la imagen en la parte superior */
+  right: 100px; /* Ubica la imagen en el borde derecho */
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Mantén la proporción de la imagen */
+  object-fit: cover; /* Ajusta la imagen dentro del espacio disponible */
+}
+
+h1 {
+  font-size: 2rem; /* Ajusta el tamaño del texto */
+}
+
 /* Sección 1: Portada */
 .section-1 {
   height: 100vh;
@@ -39,14 +56,14 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Capa oscura semi-transparente */
-  z-index: 1; /* Coloca la capa detrás del contenido */
+  background-color: rgba(0, 0, 0, 0.6); /* Capa oscura */
+  z-index: 1; /* Capa detrás del contenido */
 }
 
 /* Asegura que el contenido esté sobre la capa oscura */
 .section-1 * {
   position: relative;
-  z-index: 2;
+  z-index: 2; /* Asegura que el contenido esté sobre la capa oscura */
 }
 
 .section-1 h1 {
@@ -55,6 +72,15 @@ html {
   color: white;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
   font-size: 2.5rem;
+}
+
+.modulo-icon {
+  width: 30%; /* Más pequeña */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: auto; /* Mueve la imagen hacia la derecha */
+  display: block;
 }
 
 .section-1 p {
@@ -203,6 +229,30 @@ img.service-icon[alt="Temperatura"] {
     text-align: center;
     padding-left: 0;
     clip-path: none; /* Desactiva el clip-path en móviles */
+  }
+
+  .home {
+    margin-top: -100px;
+  }
+
+  .modulo-icon {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: -220px; /* Ajusta la posición en el contenedor */
+    right: 50px; /* Ajusta la posición en el contenedor */
+    width: 250px; /* Tamaño de la imagen */
+    height: auto; /* Mantén la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen al espacio disponible */
+    z-index: 10; /* Asegura que la imagen esté al frente */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Haz el título más pequeño en móviles */
+    text-align: center; /* Centra el título en móviles */
+  }
+
+  .module-ha {
+    flex-direction: column; /* Cambia la dirección del flex para apilar elementos */
+    align-items: center; /* Centra los elementos */
   }
 
   .services-icons-container {
