@@ -6,12 +6,6 @@ html {
   height: 100%;
   font-family: Arial, sans-serif;
   overflow-x: hidden; /* Evita el scroll horizontal */
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
   width: 100%;
 }
 
@@ -34,6 +28,25 @@ html {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
   padding-left: 10%;
+  overflow: hidden; /* Asegura que el contenido no se salga */
+}
+
+/* Capa de superposición oscura */
+.section-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Capa oscura semi-transparente */
+  z-index: 1; /* Coloca la capa detrás del contenido */
+}
+
+/* Asegura que el contenido esté sobre la capa oscura */
+.section-1 * {
+  position: relative;
+  z-index: 2;
 }
 
 .section-1 h1 {
@@ -51,6 +64,30 @@ html {
   font-size: 1.2rem;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
+
+/* Contenedor para la lista animada */
+.animated-list-container {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  width: 80%;
+  color: white;
+  z-index: 10; /* Asegura que esté encima de otros elementos */
+}
+
+/* Lista animada */
+.animated-list p {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: roll 5s infinite linear;
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: white; /* Asegúrate de que el color del texto sea visible */
+  width: 0; /* Inicia con el ancho en 0 */
+}
+
+/* Animación de enrollar y desenrollar */
 
 /* Sección 2: Características */
 .section-2 {
@@ -129,9 +166,6 @@ img.service-icon[alt="Temperatura"] {
 }
 
 /* Sección Brands */
-.Brands img {
-  padding: 30px;
-}
 
 .Brands p {
   font-family: "Roboto", sans-serif;
@@ -168,12 +202,19 @@ img.service-icon[alt="Temperatura"] {
     align-items: center;
     text-align: center;
     padding-left: 0;
+    clip-path: none; /* Desactiva el clip-path en móviles */
+  }
+
+  .Brands img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
   }
 
   .section-1 h1,
   .section-1 p {
     top: 0;
-    transform: translateY(-20%);
+    transform: none; /* Remueve el transform en móviles */
   }
 
   .section-1 h1 {
@@ -181,7 +222,7 @@ img.service-icon[alt="Temperatura"] {
   }
 
   .section-1 p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .features-container {
@@ -192,27 +233,32 @@ img.service-icon[alt="Temperatura"] {
   .feature {
     width: 100%;
   }
+
+  .text-animation h4 {
+    font-size: 14px;
+    font-style: bold;
+  }
+  .text-animation ul {
+    text-align: left; /* Alinea el contenido de la lista a la izquierda */ /* Asegura que haya espacio a la izquierda */
+    list-style-type: disc; /* Viñetas clásicas */
+    font-family: "Roboto", "Open Sans", Arial, sans-serif; /* Cambiar la fuente */
+    font-size: 1.1rem; /* Aumentar ligeramente el tamaño de fuente */
+    color: #ffffff; /* Asegurarnos que el texto sea blanco */
+    font-weight: 400; /* Un poco de peso para mejor legibilidad */
+    line-height: 1.6; /* Espaciado entre líneas */
+    max-width: 600px; /* Limitar el ancho de la lista */
+    padding-left: 22px;
+  }
+
+  /* Opcional: si deseas alinear la lista más hacia la izquierda */
 }
 
-.text-animation {
-  display: inline-block;
-  font-size: 0.5rem;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: roll 5s infinite linear;
-  width: 100%;
-}
-
-@keyframes roll {
-  0% {
-    width: 0;
+@media only screen and (min-width: 1024px) {
+  .Brands {
+    padding-left: 20px; /* Ajusta este valor según el espacio que desees */
   }
-  30%,
-  80% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
+  .text-animation ul {
+    padding-left: 0px;
   }
 }
 
@@ -222,4 +268,47 @@ img.service-icon[alt="Temperatura"] {
   background-color: #f0f0f0;
   color: black;
   text-align: center;
+}
+
+@keyframes typingAndDeleting {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    width: 100%;
+    opacity: 1; /* Escritura rápida (20% del tiempo total) */
+  }
+  70% {
+    width: 100%;
+    opacity: 1; /* Mantén el texto en pantalla durante el 50% del tiempo total */
+  }
+  100% {
+    width: 0;
+    opacity: 1; /* Borrado suave */
+  }
+}
+
+.text-animation h4 {
+  font-family: "Courier New", Courier, monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid; /* Simula el cursor */
+  width: 0;
+  display: inline-block;
+  opacity: 1;
+  animation: typingAndDeleting 8s steps(60, end) infinite;
+}
+
+/* Parpadeo del cursor */
+@keyframes blinkCursor {
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+/* Aplica el parpadeo del cursor */
+.text-animation h4 {
+  animation: typingAndDeleting 6s steps(80, end) infinite,
+    blinkCursor 0.75s step-end infinite;
 }

@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import "../styles/home.css";
 
 const Home = () => {
-  // Crea un ref para la sección de automatización
   const automationSectionRef = useRef(null);
 
   return (
@@ -11,131 +10,110 @@ const Home = () => {
         <div className="home-content section-1">
           <h1>Bienvenido a EZ LIVING</h1>
           <p className="text-animation">
-            Automatización e integración de dispositivos IoT con Home Assistant.
+            <h4>Automatización e integración de dispositivos IoT. </h4>
+            <ul>
+              <li>Camaras de seguridad </li>
+              <li>Sensores de movimiento y presencia </li>
+              <li>Iluminación</li>
+              <li>Persianas Automatizadas</li>
+              <li>
+                Si usted ya cuenta con dispositivos y app también se le puede
+                dar asesoria
+              </li>
+            </ul>
           </p>
-          <div className="divider"></div> {/* Divider para la partición */}
         </div>
 
-        {/* Sección a la que queremos hacer scroll */}
-        <div
-          ref={automationSectionRef}
-          className="automation-section section-2"
-        >
-          <h2>Esto puedes hacer en una casa inteligente</h2>
-          <div className="features-container">
-            <div className="feature">
-              <img
-                src={require("../components/images/automate-recuded.gif")}
-                alt="Automatización del hogar"
-                className="feature-image"
-              />
-              <div className="feature-text">
-                <h3>Automatización del hogar</h3>
-                <p>
-                  Ajusta el termostato, inicia música en toda la casa, cierra
-                  las persianas o puertas, controla una línea de iluminación
-                  inteligente, equipos de audio, cámaras, altavoces y más.
-                </p>
-              </div>
+        <div className="divider"></div>
+      </div>
+
+      <div ref={automationSectionRef} className="automation-section section-2">
+        <h2>Esto puedes hacer en una casa inteligente</h2>
+        <div className="features-container">
+          <div className="feature">
+            <img
+              src={require("../components/images/automate-recuded.gif")}
+              alt="Automatización del hogar"
+              className="feature-image"
+              loading="lazy"
+            />
+            <div className="feature-text">
+              <h3>Automatización del hogar</h3>
+              <p>
+                Ajusta el termostato, inicia música en toda la casa, cierra las
+                persianas o puertas, controla una línea de iluminación
+                inteligente, equipos de audio, cámaras, altavoces y más.
+              </p>
             </div>
-            <div className="feature">
-              <img
-                src={require("../components/images/home_cinema.gif")}
-                alt="Cine en casa High-End"
-                className="feature-image"
-              />
-              <div className="feature-text">
-                <h3>Cine en casa High-End</h3>
-                <p>
-                  Ve tu película favorita, finales deportivas o juega el mejor
-                  videojuego en una sala de cine en casa, espacios con sonido
-                  envolvente, iluminación inteligente, audio y video high-end.
-                </p>
-              </div>
-            </div>
-            <div className="feature">
-              <img
-                src={require("../components/images/home-assistant.jpg")}
-                alt="Tableta"
-                className="feature-image"
-              />
-              <div className="feature-text">
-                <h3>Centro de Control</h3>
-                <p>
-                  Controla tu hogar con esta tableta, tu centro de comando
-                  inteligente. Gestiona luces, cámaras, clima, y más con un
-                  simple toque, manteniendo todo bajo control desde cualquier
-                  lugar.
-                </p>
-              </div>
-            </div>
-            <div className="feature">
-              <img
-                src={require("../components/images/refri.jpg")}
-                alt="Aire"
-                className="feature-image"
-              />
-              <div className="feature-text">
-                <h3>Aire Acondicionado</h3>
-                <p>
-                  Controla la temperatura de tu hogar con facilidad. Ajusta el
-                  aire acondicionado desde cualquier lugar utilizando tu tableta
-                  de control inteligente. Mantén tu hogar fresco y cómodo con un
-                  simple toque, optimizando el clima en cada habitación según
-                  tus necesidades
-                </p>
-              </div>
+          </div>
+          <div className="feature">
+            <img
+              src={require("../components/images/home_cinema.gif")}
+              alt="Cine en casa High-End"
+              className="feature-image"
+              loading="lazy"
+            />
+            <div className="feature-text">
+              <h3>Cine en casa High-End</h3>
+              <p>
+                Ve tu película favorita, finales deportivas o juega el mejor
+                videojuego en una sala de cine en casa, espacios con sonido
+                envolvente, iluminación inteligente, audio y video high-end.
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Nueva sección: Servicios */}
-        <div className="services-section section-3">
-          <h2>Servicios</h2>
-          <div className="services-icons-container">
-            <img
-              src={require("../components/images/bulb.jpg")}
-              alt="Iluminación"
-              className="service-icon"
-            />
-            <img
-              src={require("../components/images/camera_draw.jpg")}
-              alt="Seguridad"
-              className="service-icon"
-            />
-            <img
-              src={require("../components/images/sensor image.webp")}
-              alt="Sensores"
-              className="service-icon"
-            />
-            <img
-              src={require("../components/images/cine_en_casa.png")}
-              alt="Sensores"
-              className="service-icon"
-            />
-            <img
-              src={require("../components/images/sensores.png")}
-              alt="Sensores"
-              className="service-icon"
-            />
-            <img
-              src={require("../components/images/temperatura.png")}
-              alt="Temperatura"
-              className="service-icon"
-            />
-            <img
-              src={require("../components/images/puertas.png")}
-              alt="Puertas"
-              className="service-icon"
-            />
-          </div>
+      <div className="services-section section-3">
+        <h2>Servicios</h2>
+        <div className="services-icons-container">
+          <img
+            src={require("../components/images/bulb.jpg")}
+            alt="Iluminación"
+            className="service-icon"
+            loading="lazy"
+          />
+          <img
+            src={require("../components/images/camera_draw.jpg")}
+            alt="Seguridad"
+            className="service-icon"
+            loading="lazy"
+          />
+          <img
+            src={require("../components/images/puertas.png")}
+            alt="Puerta"
+            className="service-icon"
+            loading="lazy"
+          />
+          <img
+            src={require("../components/images/sensor image.webp")}
+            alt="Sensor"
+            className="service-icon"
+            loading="lazy"
+          />
+          <img
+            src={require("../components/images/sensores.png")}
+            alt="Sensor"
+            className="service-icon"
+            loading="lazy"
+          />
+          <img
+            src={require("../components/images/temperatura.png")}
+            alt="Sensor"
+            className="service-icon"
+            loading="lazy"
+          />
         </div>
+      </div>
 
-        {/* Añade más contenido aquí si es necesario */}
-        <div className="Brands">
-          <p>Algunos Servicios de Integración</p>
-          <img src={require("./images/brands.png")} alt="Branding" />
-        </div>
+      <div className="Brands">
+        <p>Algunos Servicios de Integración</p>
+        <img
+          src={require("../components/images/brands.png")}
+          alt="Branding"
+          loading="lazy"
+        />
       </div>
 
       <a
@@ -143,10 +121,12 @@ const Home = () => {
         className="whatsapp-button"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Contacta por WhatsApp"
       >
         <img
-          src={require("./images/whatsapp.png")}
+          src={require("../components/images/whatsapp.png")}
           alt="Contacta por WhatsApp"
+          loading="lazy"
         />
       </a>
     </>
