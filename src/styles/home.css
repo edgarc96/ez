@@ -205,6 +205,10 @@ img.service-icon[alt="Temperatura"] {
     clip-path: none; /* Desactiva el clip-path en móviles */
   }
 
+  .services-icons-container {
+    text-align: center;
+  }
+
   .Brands img {
     width: 100%;
     display: block;
@@ -228,6 +232,8 @@ img.service-icon[alt="Temperatura"] {
   .features-container {
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
     grid-gap: 20px;
+    margin-left: -10px;
+    padding-left: 0px;
   }
 
   .feature {
