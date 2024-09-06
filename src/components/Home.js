@@ -56,17 +56,18 @@ const Home = () => {
           </div>
           <div className="feature">
             <img
-              src={require("../components/images/home_cinema.gif")}
-              alt="Cine en casa High-End"
+              src={require("../components/images/nest_thermostat.jpg")}
+              alt="Termostato Inteligente"
               className="feature-image"
               loading="lazy"
             />
             <div className="feature-text">
-              <h3>Cine en casa High-End</h3>
+              <h3>Termostato Inteligente</h3>
               <p>
-                Ve tu película favorita, finales deportivas o juega el mejor
-                videojuego en una sala de cine en casa, espacios con sonido
-                envolvente, iluminación inteligente, audio y video high-end.
+                Descubre el control total de tu hogar con nuestro termostato
+                inteligente, que te permite ajustar la temperatura con precisión
+                y eficiencia. Ahorra energía mientras mantienes la comodidad
+                ideal en cada habitación, todo desde la palma de tu mano.
               </p>
             </div>
           </div>
