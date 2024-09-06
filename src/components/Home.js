@@ -13,13 +13,13 @@ const Home = () => {
           <p className="text-animation">
             <h4>Automatización e integración de dispositivos IoT. </h4>
             <ul>
-              <li>Camaras de seguridad </li>
-              <li>Sensores de movimiento y presencia </li>
-              <li>Iluminación</li>
-              <li>Persianas Automatizadas</li>
+              <li>Sistemas de cámaras de seguridad</li>
+              <li>Sensores inteligentes de movimiento y presencia</li>
+              <li>Control automatizado de iluminación</li>
+              <li>Sistemas de persianas automatizadas</li>
               <li>
-                Si usted ya cuenta con dispositivos y app también se le puede
-                dar asesoria
+                Asesoría personalizada para integración de dispositivos y
+                aplicaciones existentes
               </li>
             </ul>
           </p>

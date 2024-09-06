@@ -499,3 +499,112 @@ img.service-icon[alt="Temperatura"] {
     height: 45px;
   }
 }
+
+/* Media query para iPhone 11 Pro Max (414px de ancho) */
+@media only screen and (max-width: 414px) {
+  .section-1 {
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+    clip-path: none; /* Desactiva el clip-path en móviles */
+  }
+
+  .home {
+    margin-top: -50px;
+  }
+
+  .modulo-icon {
+    position: absolute;
+    top: -190px;
+    right: 79px;
+    width: 200px; /* Ajuste más grande que en iPhone 13 Pro */
+    height: auto;
+    object-fit: cover;
+    z-index: 10;
+  }
+
+  h1 {
+    font-size: 1.6rem; /* Tamaño adecuado para el iPhone 11 Pro Max */
+    text-align: center;
+  }
+
+  .module-ha {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-icons-container {
+    text-align: center;
+  }
+
+  .Brands img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .section-1 h1,
+  .section-1 p {
+    top: 0;
+    transform: none;
+  }
+
+  .section-1 h1 {
+    font-size: 1.8rem; /* Ajusta ligeramente el tamaño del título */
+  }
+
+  .section-1 p {
+    font-size: 0.85rem; /* Tamaño más legible para los párrafos */
+  }
+
+  .features-container {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin-left: -18px;
+    padding-left: 0px;
+  }
+
+  .feature {
+    width: 100%;
+  }
+
+  .text-animation h4 {
+    font-size: 12px;
+  }
+
+  .text-animation ul {
+    text-align: left;
+    list-style-type: disc;
+    font-family: "Roboto", "Open Sans", Arial, sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 100%;
+    padding-left: 30px;
+  }
+
+  /* Ajustes en la sección de marcas */
+  .Brands {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .Brands img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Botón de WhatsApp en móviles */
+  .whatsapp-button {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .whatsapp-button img {
+    width: 50px;
+    height: 50px;
+  }
+}
