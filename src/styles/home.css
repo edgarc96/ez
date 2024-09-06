@@ -237,9 +237,9 @@ img.service-icon[alt="Temperatura"] {
 
   .modulo-icon {
     position: absolute; /* Posiciona la imagen de forma absoluta */
-    top: -200px; /* Ajusta la posición en el contenedor */
+    top: -220px; /* Ajusta la posición en el contenedor */
     right: 50px; /* Ajusta la posición en el contenedor */
-    width: 200px; /* Tamaño de la imagen */
+    width: 250px; /* Tamaño de la imagen */
     height: auto; /* Mantén la proporción de la imagen */
     object-fit: cover; /* Ajusta la imagen al espacio disponible */
     z-index: 10; /* Asegura que la imagen esté al frente */
