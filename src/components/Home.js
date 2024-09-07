@@ -66,8 +66,30 @@ const Home = () => {
               <p>
                 Descubre el control total de tu hogar con nuestro termostato
                 inteligente, que te permite ajustar la temperatura con precisión
-                y eficiencia. Ahorra energía mientras mantienes la comodidad
-                ideal en cada habitación, todo desde la palma de tu mano.
+                y eficiencia.{" "}
+                <strong style={{ color: "black" }}>Ahorra energía</strong>{" "}
+                mientras mantienes la comodidad ideal en cada habitación, todo
+                desde la palma de tu mano.
+              </p>
+            </div>
+          </div>
+          <div className="feature">
+            <img
+              src={require("../components/images/centro_control_ha.jpg")}
+              alt="Tablet"
+              className="feature-image"
+              loading="lazy"
+            />
+            <div className="feature-text">
+              <h3>Dashboard Inteligente</h3>
+              <p>
+                ¡Controla tu hogar inteligente desde un solo lugar! Con nuestra
+                tableta/dashboard, gestiona{" "}
+                <strong style={{ color: "black" }}>
+                  luces, seguridad, clima y más
+                </strong>{" "}
+                de forma rápida y sencilla. Todo el control al alcance de tu
+                mano.
               </p>
             </div>
           </div>
