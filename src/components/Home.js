@@ -83,13 +83,14 @@ const Home = () => {
             <div className="feature-text">
               <h3>Dashboard Inteligente</h3>
               <p>
-                ¡Controla tu hogar inteligente desde un solo lugar! Con nuestra
-                tableta/dashboard, gestiona{" "}
+                <strong style={{ color: "black" }}>¡Controla tu hogar</strong>{" "}
+                desde un solo lugar! Con nuestra tableta/dashboard, gestiona{" "}
                 <strong style={{ color: "black" }}>
                   luces, seguridad, clima y más
                 </strong>{" "}
-                de forma rápida y sencilla. Todo el control al alcance de tu
-                mano.
+                de forma{" "}
+                <strong style={{ color: "black" }}>rápida y sencilla.</strong>{" "}
+                Todo el control al alcance de tu mano.
               </p>
             </div>
           </div>
