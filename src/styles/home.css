@@ -410,6 +410,29 @@ img.service-icon[alt="Temperatura"] {
     width: 50px; /* Haz el botón más pequeño en móviles */
     height: 50px;
   }
+
+  .contact-section {
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  .contact-form button {
+    width: 100%; /* Ocupa todo el ancho disponible en móviles */
+    max-width: 300px;
+    padding: 10px;
+  }
+  /* Para dispositivos menores a 768px */
 }
 
 @media only screen and (min-width: 1024px) {

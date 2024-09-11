@@ -95,7 +95,6 @@ const Home = () => {
             </div>
           </div>
           <div className="contact-section">
-            <h2>Ponte en contacto con nosotros</h2>
             <div className="contact-form">
               <h3>Contáctanos</h3>
               <form action="/enviar-formulario" method="POST">
