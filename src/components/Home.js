@@ -94,6 +94,51 @@ const Home = () => {
               </p>
             </div>
           </div>
+          <div className="contact-section">
+            <h2>Ponte en contacto con nosotros</h2>
+            <div className="contact-form">
+              <h3>Contáctanos</h3>
+              <form action="/enviar-formulario" method="POST">
+                <label for="name">Nombre:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Tu nombre completo"
+                  required
+                />
+
+                <label for="phone">Teléfono:</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Tu número de teléfono"
+                  required
+                />
+
+                <label for="email">Correo Electrónico:</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Tu correo electrónico"
+                  required
+                />
+
+                <label for="message">Mensaje:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Escribe tu mensaje"
+                  required
+                ></textarea>
+
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
 
