@@ -14,6 +14,11 @@ const Home = () => {
             <h4>Automatización e integración de dispositivos IoT.</h4>
             <ul>
               <li>
+                Dashboard para integracion de dispositivos y aplicaciones
+                existentes.
+              </li>
+
+              <li>
                 Instalación y configuración de luces y switches inteligentes de
                 diferentes fabricantes.
               </li>
