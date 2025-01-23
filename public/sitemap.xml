@@ -1,38 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://ezliving.com.mx/</loc>
-    <lastmod>2023-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://ezliving.com.mx/logo.png</image:loc>
-      <image:caption>EZ Living Logo</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://ezliving.com.mx/about</loc>
-    <lastmod>2023-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ezliving.com.mx/favicon.ico</loc>
-    <lastmod>2025-01-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ezliving.com.mx/services</loc>
-    <lastmod>2023-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://ezliving.com.mx/contact</loc>
-    <lastmod>2023-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-</urlset>
+<url>
+  <loc>https://ezliving.com.mx/favicon.ico</loc>
+  <lastmod>2025-01-22</lastmod>
+</url>
+<url>
+  <loc>https://ezliving.com.mx/logo.png</loc>
+  <lastmod>2025-01-22</lastmod>
+</url>
