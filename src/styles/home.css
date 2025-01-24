@@ -15,7 +15,16 @@ html {
 }
 
 .module-ha {
-  position: relative; /* Establece el contenedor como relativo */
+  position: fixed; /* Cambia a fixed para mantener la imagen en una posición fija */
+  top: 0; /* Ajusta según sea necesario */
+  left: 0; /* Ajusta según sea necesario */
+  width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho */
+  z-index: -1; /* Asegúrate de que la imagen esté detrás de otros contenidos */
+}
+
+.module-ha img {
+  width: 100%;
+  height: auto;
 }
 
 .modulo-icon {
@@ -70,7 +79,7 @@ h1 {
   position: relative;
   color: white;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .modulo-icon {
@@ -86,7 +95,7 @@ h1 {
   position: relative;
   top: -70px;
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
 
@@ -146,9 +155,11 @@ p.ultimo:hover {
 
 .features-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
   grid-gap: 20px;
   padding: 20px;
+  margin-left: -15px;
+  padding-left: 0px;
 }
 
 .feature {
@@ -161,6 +172,7 @@ p.ultimo:hover {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .feature img {
@@ -271,6 +283,7 @@ img.service-icon[alt="Temperatura"] {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 500px; /* Limits the width of the form */
   margin: 0 auto; /* Centers the form container */
+  width: 100%;
 }
 
 .contact-form h3 {
@@ -295,6 +308,7 @@ img.service-icon[alt="Temperatura"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 0.9rem;
+  box-sizing: border-box;
 }
 
 .contact-form textarea {
@@ -401,6 +415,18 @@ img.service-icon[alt="Temperatura"] {
 
   .feature {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature img {
+    width: 100%;
+    height: auto;
+  }
+
+  .feature-text {
+    padding: 10px;
   }
 
   .text-animation h4 {
@@ -451,12 +477,15 @@ img.service-icon[alt="Temperatura"] {
 
   .contact-form {
     width: 100%;
+    padding: 20px;
   }
 
   .contact-form input,
   .contact-form textarea {
     padding: 5px;
     font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .contact-form button {
