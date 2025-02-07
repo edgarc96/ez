@@ -68,7 +68,6 @@ h1 {
 
 .section-1 h1 {
   position: relative;
-  top: -50px;
   color: white;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
   font-size: 2.5rem;
@@ -89,6 +88,29 @@ h1 {
   color: white;
   font-size: 1.2rem;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+p.ultimo {
+  margin-bottom: 60px;
+  margin-top: 155px;
+  margin-right: 50px;
+  text-align: left;
+  color: goldenrod; /* Un tono rojo más suave */
+  font-size: 1.2em; /* Aumenta el tamaño de fuente */
+  font-weight: bold; /* Hace el texto más destacado */
+  font-family: "Arial", sans-serif; /* Cambia la tipografía */
+
+  /* Efecto de sombra */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+  /* Añade una suave transición de color */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+p.ultimo:hover {
+  color: gold; /* Cambia el color al hacer hover */
+  transform: scale(1.05); /* Amplía el texto ligeramente */
 }
 
 /* Contenedor para la lista animada */
@@ -112,8 +134,6 @@ h1 {
   color: white; /* Asegúrate de que el color del texto sea visible */
   width: 0; /* Inicia con el ancho en 0 */
 }
-
-/* Animación de enrollar y desenrollar */
 
 /* Sección 2: Características */
 .section-2 {
@@ -192,7 +212,6 @@ img.service-icon[alt="Temperatura"] {
 }
 
 /* Sección Brands */
-
 .Brands p {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
@@ -312,27 +331,32 @@ img.service-icon[alt="Temperatura"] {
     clip-path: none; /* Desactiva el clip-path en móviles */
   }
 
+  .section-1 h1 {
+    margin-bottom: 5px;
+  }
+
+  /* OCULTA el texto "¿Ya tienes tus dispositivos...?" en móviles */
+  p.ultimo {
+    display: none;
+  }
+
   .home {
-    margin-top: -100px;
+    margin-top: -170px;
   }
 
   .modulo-icon {
     position: absolute; /* Posiciona la imagen de forma absoluta */
-<<<<<<< HEAD
-    top: -220px; /* Ajusta la posición en el contenedor */
-    right: 50px; /* Ajusta la posición en el contenedor */
-    width: 250px; /* Tamaño de la imagen */
-=======
     top: -180px; /* Ajusta la posición en el contenedor */
     right: 50px; /* Ajusta la posición en el contenedor */
-    width: 220px; /* Tamaño de la imagen */
->>>>>>> 718aaff (Mensaje de commit descriptivo)
+    width: 200px; /* Tamaño de la imagen */
     height: auto; /* Mantén la proporción de la imagen */
     object-fit: cover; /* Ajusta la imagen al espacio disponible */
     z-index: 10; /* Asegura que la imagen esté al frente */
   }
 
   h1 {
+    margin-top: 100px;
+    margin-bottom: 50px;
     font-size: 1.5rem; /* Haz el título más pequeño en móviles */
     text-align: center; /* Centra el título en móviles */
   }
@@ -381,29 +405,6 @@ img.service-icon[alt="Temperatura"] {
     font-size: 14px;
     font-style: bold;
   }
-<<<<<<< HEAD
-=======
-
-  p.ultimo {
-    margin-bottom: 30px;
-    color: goldenrod; /* Un tono rojo más suave */
-    font-size: 1.2em; /* Aumenta el tamaño de fuente */
-    font-weight: bold; /* Hace el texto más destacado */
-    font-family: "Arial", sans-serif; /* Cambia la tipografía */
-
-    /* Efecto de sombra */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-
-    /* Añade una suave transición de color */
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-
-  /* Efecto al pasar el mouse */
-  p.ultimo:hover {
-    color: gold; /* Un rojo más oscuro al hacer hover */
-    transform: scale(1.05); /* Amplía el texto ligeramente */
-  }
->>>>>>> 718aaff (Mensaje de commit descriptivo)
   .text-animation ul {
     text-align: left; /* Alinea el contenido de la lista a la izquierda */
     list-style-type: disc; /* Viñetas clásicas */
@@ -715,6 +716,16 @@ img.service-icon[alt="Temperatura"] {
     line-height: 1.5;
     max-width: 100%;
     padding-left: 30px;
+  }
+
+  @media only screen and (max-width: 428px) {
+    p.ultimo {
+      display: none;
+    }
+
+    .home {
+      margin-top: 250px !important;
+    }
   }
 
   /* Ajustes en la sección de marcas */

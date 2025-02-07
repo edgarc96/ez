@@ -10,41 +10,32 @@ const Home = () => {
         <div className="home-content section-1">
           <h1>Bienvenido a EZ LIVING</h1>
 
-          <p className="text-animation">
-            <h4>Automatización e integración de dispositivos IoT. </h4>
+          <div className="text-animation">
+            <h4>Automatización e integración de dispositivos IoT.</h4>
             <ul>
-<<<<<<< HEAD
-              <li>Sistemas de cámaras de seguridad</li>
-              <li>Sensores inteligentes de movimiento y presencia</li>
-              <li>Control automatizado de iluminación</li>
-              <li>Sistemas de persianas automatizadas</li>
               <li>
-                Asesoría personalizada para integración de dispositivos y
-                aplicaciones existentes
+                Dashboard para integracion de dispositivos y aplicaciones
+                existentes.
               </li>
-            </ul>
-          </p>
-        </div>
-=======
+
               <li>
-                Instalacion y configuracion de luces y switches inteligentes de
+                Instalación y configuración de luces y switches inteligentes de
                 diferentes fabricantes.
               </li>
-              <li> Sensores inteligentes de movimiento y presencia.</li>
+              <li>Sensores inteligentes de movimiento y presencia.</li>
               <li>Control de termostatos de aire acondicionado.</li>
-              <li>Sistemas de camaras de seguridad.</li>
+              <li>Sistemas de cámaras de seguridad.</li>
               <li>
-                Integracion de persianas automatizadas a dashboard de control.
+                Integración de persianas automatizadas a dashboard de control.
               </li>
             </ul>
-          </p>
+          </div>
           <p className="ultimo">
-            ¿Ya tienes tus dispositivos inteligentes? - Nosotros te podemos
-            ayudar !
+            ¿Ya tienes tus dispositivos inteligentes? - ¡Nosotros te podemos
+            ayudar!
           </p>
         </div>
 
->>>>>>> 718aaff (Mensaje de commit descriptivo)
         <div className="module-ha">
           <img
             src={require("../components/images/centro_control_ha.jpg")}
@@ -87,8 +78,8 @@ const Home = () => {
               <p>
                 Descubre el control total de tu hogar con nuestro termostato
                 inteligente, que te permite ajustar la temperatura con precisión
-                y eficiencia.{" "}
-                <strong style={{ color: "black" }}>Ahorra energía</strong>{" "}
+                y eficiencia.
+                <strong style={{ color: "black" }}> Ahorra energía </strong>
                 mientras mantienes la comodidad ideal en cada habitación, todo
                 desde la palma de tu mano.
               </p>
@@ -104,13 +95,17 @@ const Home = () => {
             <div className="feature-text">
               <h3>Dashboard Inteligente</h3>
               <p>
-                <strong style={{ color: "black" }}>¡Controla tu hogar</strong>{" "}
+                <strong style={{ color: "black" }}>¡Controla tu hogar </strong>
                 desde un solo lugar! Con nuestra tableta/dashboard, gestiona{" "}
                 <strong style={{ color: "black" }}>
-                  luces, seguridad, clima y más
-                </strong>{" "}
+                  {" "}
+                  luces, seguridad, clima y más{" "}
+                </strong>
                 de forma{" "}
-                <strong style={{ color: "black" }}>rápida y sencilla.</strong>{" "}
+                <strong style={{ color: "black" }}>
+                  {" "}
+                  rápida y sencilla.
+                </strong>{" "}
                 Todo el control al alcance de tu mano.
               </p>
             </div>
@@ -119,7 +114,7 @@ const Home = () => {
             <div className="contact-form">
               <h3>Contáctanos</h3>
               <form action="/enviar-formulario" method="POST">
-                <label for="name">Nombre:</label>
+                <label htmlFor="name">Nombre:</label>
                 <input
                   type="text"
                   id="name"
@@ -128,7 +123,7 @@ const Home = () => {
                   required
                 />
 
-                <label for="phone">Teléfono:</label>
+                <label htmlFor="phone">Teléfono:</label>
                 <input
                   type="tel"
                   id="phone"
@@ -137,7 +132,7 @@ const Home = () => {
                   required
                 />
 
-                <label for="email">Correo Electrónico:</label>
+                <label htmlFor="email">Correo Electrónico:</label>
                 <input
                   type="email"
                   id="email"
@@ -146,7 +141,7 @@ const Home = () => {
                   required
                 />
 
-                <label for="message">Mensaje:</label>
+                <label htmlFor="message">Mensaje:</label>
                 <textarea
                   id="message"
                   name="message"
