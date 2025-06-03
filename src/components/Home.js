@@ -13,24 +13,11 @@ const Home = () => {
           <p className="text-animation">
             <h4>Automatización e integración de dispositivos IoT. </h4>
             <ul>
-<<<<<<< HEAD
-              <li>Sistemas de cámaras de seguridad</li>
-              <li>Sensores inteligentes de movimiento y presencia</li>
-              <li>Control automatizado de iluminación</li>
-              <li>Sistemas de persianas automatizadas</li>
-              <li>
-                Asesoría personalizada para integración de dispositivos y
-                aplicaciones existentes
-              </li>
-            </ul>
-          </p>
-        </div>
-=======
               <li>
                 Instalacion y configuracion de luces y switches inteligentes de
                 diferentes fabricantes.
               </li>
-              <li> Sensores inteligentes de movimiento y presencia.</li>
+              <li>Sensores inteligentes de movimiento y presencia.</li>
               <li>Control de termostatos de aire acondicionado.</li>
               <li>Sistemas de camaras de seguridad.</li>
               <li>
@@ -43,8 +30,6 @@ const Home = () => {
             ayudar !
           </p>
         </div>
-
->>>>>>> 718aaff (Mensaje de commit descriptivo)
         <div className="module-ha">
           <img
             src={require("../components/images/centro_control_ha.jpg")}
